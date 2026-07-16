@@ -2,81 +2,76 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 }
 
 body{
-background:#0f0f0f;
+background:#111;
 color:white;
 }
 
-header{
+.container{
+width:90%;
+margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
-background:#111;
-position:sticky;
-top:0;
+}
+
+header{
+background:#000;
+padding:20px 0;
 }
 
 .logo{
-font-size:28px;
-font-weight:bold;
-color:#ff8800;
+color:#ff8c00;
+font-size:30px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:25px;
+margin-left:20px;
 font-size:18px;
-transition:.3s;
 }
 
 nav a:hover{
-color:#ff8800;
+color:#ff8c00;
 }
 
 .hero{
 text-align:center;
 padding:120px 20px;
-background:linear-gradient(135deg,#111,#222);
+background:#1a1a1a;
 }
 
-.hero h1{
-font-size:60px;
+.hero h2{
+font-size:50px;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:24px;
-max-width:700px;
-margin:auto;
-line-height:1.6;
+font-size:22px;
+margin-bottom:30px;
 }
 
 .hero a{
 display:inline-block;
-margin-top:35px;
-padding:15px 40px;
-background:#ff8800;
+padding:15px 35px;
+background:#ff8c00;
 color:white;
 text-decoration:none;
-border-radius:10px;
-font-size:20px;
+border-radius:8px;
 font-weight:bold;
-transition:.3s;
 }
 
 .hero a:hover{
 background:#ff6600;
-transform:scale(1.05);
 }
 
 @media(max-width:768px){
 
-header{
+.container{
 flex-direction:column;
 }
 
@@ -89,8 +84,8 @@ display:block;
 margin:10px 0;
 }
 
-.hero h1{
-font-size:40px;
+.hero h2{
+font-size:36px;
 }
 
 .hero p{
