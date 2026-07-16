@@ -1,1 +1,1 @@
-// Haven & Beyond JavaScript
+console.log("Haven & Beyond Website Loaded");
