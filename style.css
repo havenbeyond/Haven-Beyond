@@ -1,1 +1,100 @@
-/* Haven & Beyond CSS */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#ff8800;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff8800;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(135deg,#111,#222);
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:24px;
+max-width:700px;
+margin:auto;
+line-height:1.6;
+}
+
+.hero a{
+display:inline-block;
+margin-top:35px;
+padding:15px 40px;
+background:#ff8800;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-size:20px;
+font-weight:bold;
+transition:.3s;
+}
+
+.hero a:hover{
+background:#ff6600;
+transform:scale(1.05);
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
