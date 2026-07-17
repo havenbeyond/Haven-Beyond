@@ -336,3 +336,33 @@ nav{
     color: #555;
     font-size: 14px;
 }
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    .trust {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 15px;
+    }
+
+    .trust-box {
+        padding: 20px 10px;
+    }
+
+    .trust-box h3 {
+        font-size: 17px;
+    }
+
+    .trust-box p {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .trust {
+        grid-template-columns: 1fr;
+    }
+
+}
