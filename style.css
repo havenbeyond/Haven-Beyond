@@ -494,3 +494,46 @@ nav{
     }
 
 }
+/* Price Style */
+
+.price {
+    color: #e63946;
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+
+/* WhatsApp Button Style */
+
+.product-card .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.product-card .btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* Product Image Hover */
+
+.product-image {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.product-image img {
+    transition: 0.4s;
+}
+
+.product-image img:hover {
+    transform: scale(1.08);
+}
