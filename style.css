@@ -309,3 +309,30 @@ nav{
 }
 
 }
+/* Trust Section */
+
+.trust {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+    background: #f8f8f8;
+}
+
+.trust-box {
+    background: white;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.trust-box h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.trust-box p {
+    color: #555;
+    font-size: 14px;
+}
