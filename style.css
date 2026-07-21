@@ -910,3 +910,39 @@ nav{
 
 
 }
+/* ================= View Details Button ================= */
+
+
+.details-btn{
+
+    display:inline-block;
+
+    width:100%;
+
+    margin-bottom:12px;
+
+    padding:12px;
+
+    border-radius:30px;
+
+    border:2px solid #111;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.details-btn:hover{
+
+    background:#111;
+
+    color:white;
+
+}
