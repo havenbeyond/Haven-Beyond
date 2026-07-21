@@ -30,6 +30,20 @@ const products = [
         "Cute dancing rabbit toy with music, LED lights and fun movements.",
         whatsapp:
         "I want to order Rabbit Dance Musical Toy"
-    }
+    },
+,
 
+{
+    image: "product4.jpg",
+
+    name: "AirPods Pro Cover",
+
+    price: "৳250",
+
+    description:
+    "Tom Cat AirPods Case Cover আপনার AirPods-কে দিন মজাদার ও ইউনিক লুক! 😺✨ Premium silicone material দিয়ে তৈরি এই case cover AirPods-কে scratch, dust ও ছোটখাটো আঘাত থেকে রক্ষা করে। সাথে রয়েছে carabiner hook, যা সহজে বহন করা যায়। Perfect fit design এবং সহজ charging access.",
+
+    whatsapp:
+    "I want to order AirPods Pro Cover"
+}
 ];
