@@ -216,7 +216,12 @@ if(productContainer && typeof products !== "undefined"){
                 ${product.description}
             </p>
 
+<a href="product.html?id=${products.indexOf(product)}"
+class="details-btn">
 
+View Details
+
+</a>
             <a href="https://wa.me/8801350926404?text=${product.whatsapp}"
             class="btn"
             target="_blank">
