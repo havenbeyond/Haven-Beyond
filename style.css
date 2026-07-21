@@ -629,3 +629,27 @@ margin-bottom:15px;
 .review-card h4{
 color:#25D366;
 }
+/* Scroll To Top */
+
+#topBtn{
+display:none;
+position:fixed;
+bottom:90px;
+right:20px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#111;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(0,0,0,.3);
+transition:.3s;
+z-index:999;
+}
+
+#topBtn:hover{
+background:#25D366;
+transform:scale(1.1);
+}
