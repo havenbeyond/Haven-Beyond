@@ -946,3 +946,115 @@ nav{
     color:white;
 
 }
+/* ================= Product Details Page ================= */
+
+
+.product-details{
+
+    display:flex;
+
+    gap:50px;
+
+    padding:70px 8%;
+
+    background:white;
+
+    align-items:center;
+
+}
+
+
+
+.details-image{
+
+    width:50%;
+
+}
+
+
+
+.details-image img{
+
+    width:100%;
+
+    max-height:500px;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+
+
+.details-info{
+
+    width:50%;
+
+}
+
+
+
+.details-info h2{
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.details-info h3{
+
+    color:#e63946;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.details-info p{
+
+    color:#555;
+
+    font-size:17px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+.product-details{
+
+    flex-direction:column;
+
+}
+
+
+.details-image,
+.details-info{
+
+    width:100%;
+
+}
+
+
+.details-info h2{
+
+    font-size:28px;
+
+}
+
+
+}
