@@ -1,19 +1,29 @@
-// Smooth scrolling for menu links
+/* ==========================================
+   Haven & Beyond V2
+   Final script.js
+========================================== */
 
-document.querySelectorAll('nav a').forEach(link => {
 
-    link.addEventListener('click', function(e){
+/* ================= Smooth Navigation ================= */
 
-        e.preventDefault();
+
+document.querySelectorAll("nav a").forEach(link => {
+
+    link.addEventListener("click", function(e){
 
         const target = document.querySelector(
-            this.getAttribute('href')
+            this.getAttribute("href")
         );
+
 
         if(target){
 
+            e.preventDefault();
+
             target.scrollIntoView({
+
                 behavior:"smooth"
+
             });
 
         }
@@ -26,89 +36,149 @@ document.querySelectorAll('nav a').forEach(link => {
 
 
 
-// Buy Now Button Action
 
-document.querySelectorAll('.product-card button')
-.forEach(button => {
+/* ================= Hero Animation ================= */
 
 
-    button.addEventListener('click', function(){
+window.addEventListener("load", ()=>{
 
 
-        let productName =
-        this.parentElement.querySelector('h3').innerText;
+    const hero = document.querySelector(".hero-content");
 
 
-        let message =
-        "Hello Haven & Beyond, I want to order: "
-        + productName;
+    if(hero){
+
+        setTimeout(()=>{
+
+            hero.style.opacity="1";
+
+            hero.style.transform="translateY(0)";
 
 
-        let whatsappNumber = "8801XXXXXXXXX";
+        },300);
 
-
-        let whatsappURL =
-        "https://wa.me/"
-        + whatsappNumber
-        + "?text="
-        + encodeURIComponent(message);
-
-
-
-        window.open(
-            whatsappURL,
-            "_blank"
-        );
-
-
-    });
-
-
-});
-
-
-
-
-
-// Simple welcome animation
-
-window.addEventListener("load",()=>{
-
-
-    document.querySelector(".hero-content")
-    .style.opacity="1";
-
-
-});
-function searchProducts() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let products = document.querySelectorAll(".product-card");
-
-    products.forEach(function(product) {
-        let text = product.innerText.toLowerCase();
-
-        if (text.includes(input)) {
-            product.style.display = "block";
-        } else {
-            product.style.display = "none";
-        }
-    });
-}
-// Scroll To Top Button
-
-let topButton = document.getElementById("topBtn");
-
-window.onscroll = function () {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        topButton.style.display = "block";
-    } else {
-        topButton.style.display = "none";
     }
-};
 
-function topFunction() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+
+});
+
+
+
+
+
+
+/* ================= Product Search ================= */
+
+
+function searchProducts(){
+
+
+    const input = document.getElementById("searchInput");
+
+
+    if(!input) return;
+
+
+
+    const value = input.value.toLowerCase();
+
+
+
+    const products = document.querySelectorAll(
+        ".product-card"
+    );
+
+
+
+    products.forEach(product=>{
+
+
+        const text = product.innerText.toLowerCase();
+
+
+
+        if(text.includes(value)){
+
+
+            product.style.display="block";
+
+
+        }else{
+
+
+            product.style.display="none";
+
+
+        }
+
+
     });
+
+
 }
+
+
+
+
+
+
+
+/* ================= Scroll To Top ================= */
+
+
+const topButton = document.getElementById("topBtn");
+
+
+
+window.addEventListener("scroll", ()=>{
+
+
+    if(!topButton) return;
+
+
+
+    if(window.scrollY > 300){
+
+
+        topButton.style.display="block";
+
+
+    }else{
+
+
+        topButton.style.display="none";
+
+
+    }
+
+
+});
+
+
+
+
+
+
+
+function topFunction(){
+
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+
+}
+
+
+
+
+
+
+console.log(
+"Haven & Beyond V2 Loaded Successfully"
+);
