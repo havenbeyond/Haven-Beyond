@@ -178,7 +178,63 @@ function topFunction(){
 
 
 
+/* ================= Load Products ================= */
 
+const productContainer = document.getElementById("productContainer");
+
+
+if(productContainer && typeof products !== "undefined"){
+
+
+    products.forEach(product => {
+
+
+        productContainer.innerHTML += `
+
+        <div class="product-card">
+
+
+            <div class="product-image">
+
+                <img src="${product.image}" 
+                alt="${product.name}">
+
+            </div>
+
+
+            <h3>
+                ${product.name}
+            </h3>
+
+
+            <h4 class="price">
+                ${product.price}
+            </h4>
+
+
+            <p>
+                ${product.description}
+            </p>
+
+
+            <a href="https://wa.me/8801350926404?text=${product.whatsapp}"
+            class="btn"
+            target="_blank">
+
+            Order on WhatsApp
+
+            </a>
+
+
+        </div>
+
+        `;
+
+
+    });
+
+
+}
 console.log(
 "Haven & Beyond V2 Loaded Successfully"
 );
